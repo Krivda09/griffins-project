@@ -1,16 +1,9 @@
 import { getAllCharacters } from '@/lib/characters';
 import { Container } from '@/components/container';
 import Image from 'next/image';
-
-type Params = {
-	slug: string;
-};
-
-type CharQout = {
-	qoute: string;
-};
-
-const endpoint = 'http://localhost:3000/api/';
+import { Params } from '@/types/char-params';
+import { CharQout } from '@/types/char-qout';
+import { endpoint } from '@/lib/endpoint';
 
 export const dynamicParams = false;
 

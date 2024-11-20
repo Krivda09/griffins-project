@@ -1,10 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import characters from '@/data/characters.json';
 import qouts from '@/data/qouts.json';
-
-type Params = {
-	slug: string;
-};
+import { Params } from '@/types';
 
 export const GET = async (req: NextRequest, { params }: { params: Params }) => {
 	try {

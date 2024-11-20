@@ -1,9 +1,5 @@
-import { ReactNode } from 'react';
+import { ContainerProps } from '@/types';
 
-type ContainerProps = {
-	children: ReactNode;
-	className: string;
-};
 export const Container = ({ children, className }: ContainerProps) => {
 	return (
 		<div className={`px-5 w-full max-w-screen-md m-auto ${className}`}>
